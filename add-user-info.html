@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="add-user-info.css" />
+    <title>Naudotojo Informacija</title>
+  </head>
+  <body>
+    <form id="add-user-form">
+      <div>
+        <label for="name">Vardas:</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+      <div>
+        <label for="surname">Pavardė:</label>
+        <input type="text" id="surname" name="surname" required />
+      </div>
+      <div>
+        <label for="personal-code">Asmens kodas:</label>
+        <input
+          type="text"
+          id="personal-code"
+          name="personalCode"
+          pattern="[0-9]{11}"
+          title="Įveskite 11 skaičių."
+          required
+        />
+      </div>
+      <div>
+        <label for="telephone-number">Telefono numberis:</label>
+        <input
+          type="text"
+          id="telephone-number"
+          name="telephoneNumber"
+          required
+        />
+      </div>
+      <div>
+        <label for="email">El. pašto adresas:</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+      <div>
+        <label for="city">Miestas:</label>
+        <input type="text" id="city" name="address[city]" required />
+      </div>
+      <div>
+        <label for="street">Gatvė:</label>
+        <input type="text" id="street" name="address[street]" required />
+      </div>
+      <div>
+        <label for="house-number">Namo numeris:</label>
+        <input
+          type="text"
+          id="house-number"
+          name="address[houseNumber]"
+          required
+        />
+      </div>
+      <div>
+        <label for="flat-number">Buto numeris:</label>
+        <input
+          type="text"
+          id="flat-number"
+          name="address[flatNumber]"
+          required
+          placeholder="Jeigu gyvenate nuosavame name ir ten nėra buto įveskite 0"
+          title="0"
+        />
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+  <script src="./add-user-info.js"></script>
+</html>
