@@ -9,15 +9,18 @@
     <link rel="stylesheet" href="home.css" />
   </head>
   <body>
-    <table id="cars-table">
+    <div class="menu">
+      <button id="add-user-info">Add User Information</button>
+    </div>
+    <table id="accounts-table" allign="center">
       <thead>
         <tr>
-          <th>ID</th>
-          <th>BRAND</th>
-          <th>COLOR</th>
+          <th>Username</th>
+          <th>Role</th>
+          <th id="delete-column"></th>
         </tr>
       </thead>
-      <tbody id="cars-table-body"></tbody>
+      <tbody id="accounts-table-body"></tbody>
     </table>
   </body>
   <script src="./home.js"></script>

@@ -1,18 +1,54 @@
-table {
-  width: 100%;
-  border-collapse: collapse;
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
 }
 
-th,
+#add-user-info {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+button.delete-button {
+  background-color: #f44336;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+#delete-column {
+  display: none;
+}
+
+tr.account-row {
+  background-color: #f2f2f2;
+}
+
+tr.account-row:hover {
+  background-color: #e2e2e2;
+}
+
 td {
-  border: 1px solid black;
-  padding: 8px;
-  text-align: left;
+  border: 1px solid #ddd;
+  padding: 16px;
 }
 
 th {
-  background-color: lightgray;
-}
-body {
-  line-height: 2;
+  padding: 16px;
+  text-align: left;
+  background-color: #4caf50;
+  color: white;
 }
