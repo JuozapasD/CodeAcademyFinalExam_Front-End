@@ -59,3 +59,29 @@ section {
 .user-information-visible {
   margin: 50px auto;
 }
+.user-information div {
+  padding: 5px 0;
+}
+
+.user-information-visible div.surname:nth-child(4) {
+  margin-bottom: 21px;
+  padding-bottom: 26px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.24);
+}
+
+.user-information-visible div.email:nth-child(7) {
+  margin-bottom: 21px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.24);
+  padding-bottom: 26px;
+}
+.user-information > div:nth-child(-n + 4) {
+  font-weight: bold;
+}
+.personal-code {
+  filter: blur(4px);
+  transition: filter 0.4s ease;
+}
+
+.personal-code:hover {
+  filter: none;
+}

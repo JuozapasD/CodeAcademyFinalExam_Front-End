@@ -113,3 +113,7 @@ async function fetchAccounts() {
 }
 
 fetchAccounts();
+
+// cia idejau delete button, bet padariau, kad jis nesimatytu, nes pagal uzduoti
+// neriekia funkcionalumo, kad admin useris galetu per user interface delete userius
+//Admin gali deletinti userius per db
