@@ -17,7 +17,13 @@ form.addEventListener("submit", async e => {
         password: pwd
       })
     });
+    if (response.ok) {
+      alert("Užsiregistruoti pavyko, prašome prisijungti");
+    } else {
+      alert("Užsiregistruoti nepavyko, vartotojo vardas užimtas");
+    }
   } catch (error) {
     console.error(error);
+    alert("Sign-up failed. Please try again later.");
   }
 });
