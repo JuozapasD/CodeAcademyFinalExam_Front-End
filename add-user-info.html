@@ -9,14 +9,41 @@
     <title>Naudotojo Informacija</title>
   </head>
   <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="./home.html">Pagrindinis meniu</a>
+        </li>
+        <li>
+          <a href="./Naudotojo Informacija.html"
+            >Peržiūrėti naudotojo informaciją</a
+          >
+        </li>
+        <li>
+          <a href="./login.html">Atsijungti</a>
+        </li>
+      </ul>
+    </nav>
     <form id="add-user-form">
       <div>
         <label for="name">Vardas:</label>
-        <input type="text" id="name" name="name" required />
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required
+          placeholder="Būtina užpildyti"
+        />
       </div>
       <div>
         <label for="surname">Pavardė:</label>
-        <input type="text" id="surname" name="surname" required />
+        <input
+          type="text"
+          id="surname"
+          name="surname"
+          required
+          placeholder="Būtina užpildyti"
+        />
       </div>
       <div>
         <label for="personal-code">Asmens kodas:</label>
@@ -27,6 +54,7 @@
           pattern="[0-9]{11}"
           title="Įveskite 11 skaičių."
           required
+          placeholder="Būtina užpildyti"
         />
       </div>
       <div>
@@ -36,19 +64,38 @@
           id="telephone-number"
           name="telephoneNumber"
           required
+          placeholder="Būtina užpildyti"
         />
       </div>
       <div>
         <label for="email">El. pašto adresas:</label>
-        <input type="email" id="email" name="email" required />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          placeholder="Būtina užpildyti"
+        />
       </div>
       <div>
         <label for="city">Miestas:</label>
-        <input type="text" id="city" name="address[city]" required />
+        <input
+          type="text"
+          id="city"
+          name="address[city]"
+          required
+          placeholder="Būtina užpildyti"
+        />
       </div>
       <div>
         <label for="street">Gatvė:</label>
-        <input type="text" id="street" name="address[street]" required />
+        <input
+          type="text"
+          id="street"
+          name="address[street]"
+          required
+          placeholder="Būtina užpildyti"
+        />
       </div>
       <div>
         <label for="house-number">Namo numeris:</label>
@@ -56,6 +103,7 @@
           type="text"
           id="house-number"
           name="address[houseNumber]"
+          placeholder="Būtina užpildyti"
           required
         />
       </div>
@@ -65,13 +113,12 @@
           type="text"
           id="flat-number"
           name="address[flatNumber]"
-          required
-          placeholder="Jeigu gyvenate nuosavame name ir ten nėra buto įveskite 0"
           title="0"
         />
       </div>
-      <button type="submit">Submit</button>
+      <button type="submit">Patvirtinti</button>
     </form>
+    <div id="success-message" style="display: none">Informacija atnaujinta</div>
   </body>
   <script src="./add-user-info.js"></script>
 </html>

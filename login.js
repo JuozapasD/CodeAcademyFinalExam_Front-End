@@ -21,10 +21,6 @@ form.addEventListener("submit", async e => {
     if (response.ok) {
       const data = await response.text();
 
-      // document.cookie = `token=${data}`;
-      // window.globalToken = document.cookie;
-      // window.location.href = "./home.html";
-
       document.cookie = `token=${data}`;
 
       const getCookie = name => {

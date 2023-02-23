@@ -1,10 +1,5 @@
 const table = document.getElementById("accounts-table");
 const tableBody = document.getElementById("accounts-table-body");
-const addUserButton = document.querySelector("#add-user-info");
-
-addUserButton.addEventListener("click", () => {
-  window.location.href = "/add-user-info.html";
-});
 
 const getCookie = name => {
   const cookies = document.cookie.split(";");
